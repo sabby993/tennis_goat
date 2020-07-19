@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tennis G.O.A.T</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../static/css/main.css" />
+	</head>
+	<body id="top">
+
+			<!-- Banner -->
+
+				<section id="banner" style="background-image: url('../static/css/images/background_tennis1.jpg');">
+					<div class="inner">
+						<header>
+							<h1>Greatest Player of All Time</h1>
+							<p>It is up for debate for as long as tennis has been played.<br />
+							Take a look at the below players who are right at the very top of G.O.A.T status.</p>
+						</header>
+						<a href="#main" class="more" style="background-image: url(/static/css/images/arrow.svg);">Select Player</a>
+					</div>
+				</section>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="inner">
+
+					<!-- Boxes -->
+						<div class="thumbnails">
+
+							<div class="box">
+								<img class="image fit" src="../static/pic1.jpg" alt="" />
+								<div class="inner">
+									<h3>ROGER FEDERER</h3>
+									<p>20-time Grand Slam Champion which is an Open Era record.</p>
+									
+								</div>
+							</div>
+
+							<div class="box">
+								<img class="image fit" src="../static/pic2.jpg" alt="" />
+								<div class="inner">
+									<h3>RAFAEL NADAL</h3>
+									<p>19-time Grand Slam Champion. Won Roland Garros a record 12 times.</p>
+									
+								</div>
+							</div>
+
+							<div class="box">
+								<img class="image fit" src="../static/pic3.jpg" alt="" />
+								<div class="inner">
+									<h3>NOVAK DJOKOVIC</h3>
+									<p>17-time Grand Slam Champion. Won Australian Open a record 8 times.</p>
+								
+								</div>
+							</div>
+
+							<div class="box">
+								<img class="image fit" src="../static/pic4.jpg" alt="" />
+								<div class="inner">
+									<h3>PETE SAMPRAS</h3>
+									<p>14-time Grand Slam Champion. Considered the best serve and volley player. Won 7 Wimbledon titles.</p>
+								
+								</div>
+							</div>
+
+							<div class="box">
+								<img class="image fit" src="../static/pic5.jpg" alt="" />
+								<div class="inner">
+									<h3>ANDRE AGASSI</h3>
+									<p>8-time Grand Slam Champion and 1996 Olympic gold medalist.</p>
+									
+								</div>
+							</div>
+
+							<div class="box">
+								<img class="image fit" src="../static/pic6.jpg" alt="" />
+								<div class="inner">
+									<h3>JOHN McENROE</h3>
+									<p>7-time Grand Slam Champion and one of the best in shot-making and volleying in history.</p>
+									
+								</div>
+							</div>
+
+							<div class="box">
+								<img class="image fit" src="../static/pic7.jpg" alt="" />
+								<div class="inner">
+									<h3>IVAN LENDL</h3>
+									<p>8-time Grand Slam Champion and was a record runner-up 11 times at Grand Slams.</p>
+									
+								</div>
+							</div>
+
+							<div class="box">
+								<img class="image fit" src="../static/pic8.jpg" alt="" />
+								<div class="inner">
+									<h3>JIMMY CONNORS</h3>
+									<p>8-time Grand Slam Champion and won a total of 109 titles which is an Open-Era record..</p>
+									
+								</div>
+							</div>
+
+							<div class="box">
+								<img class="image fit" src="../static/pic9.jpg" alt="" />
+								<div class="inner">
+									<h3>ROD LAVER</h3>
+									<p>11-time Grand Slam Champion and twice won all the Grand slams in one calender year in 1962 and 1969.</p>
+								
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Radio Buttons -->
+				
+				<form action="{{url_for('success')}}" method="POST">
+					<h1>Please Enter your Email ID: </h1><br>
+					<input title="Your email is safe with us" placeholder="Enter your email address" type="email" name="email_name" required><br>
+					<h1>Please select the player you think is the Greatest of All Time and we will let you know by mail which player has the highest votes: </h1><br>
+					<div class="radiobtn">
+						<input type="radio" id="ROGER FEDERER"
+									name="goat" value="ROGER FEDERER"/>
+						<label for="ROGER FEDERER">ROGER FEDERER</label>
+					</div>
+				
+					<div class="radiobtn">
+						<input type="radio" id="RAFAEL NADAL"
+									name="goat" value="RAFAEL NADAL"/>
+						<label for="RAFAEL NADAL">RAFAEL NADAL</label>
+					</div>
+				
+					<div class="radiobtn">
+						<input type="radio" id="NOVAK DJOKOVIC"
+									name="goat" value="NOVAK DJOKOVIC" />
+						<label for="NOVAK DJOKOVIC">NOVAK DJOKOVIC</label>
+					</div>
+					<div class="radiobtn">
+						<input type="radio" id="PETE SAMPRAS"
+									name="goat" value="PETE SAMPRAS" />
+						<label for="PETE SAMPRAS">PETE SAMPRAS</label>
+					</div>
+					<div class="radiobtn">
+						<input type="radio" id="ANDRE AGASSI"
+									name="goat" value="ANDRE AGASSI" />
+						<label for="ANDRE AGASSI">ANDRE AGASSI</label>
+					</div>
+					<div class="radiobtn">
+						<input type="radio" id="JOHN MCENROE"
+									name="goat" value="JOHN MCENROE" />
+						<label for="JOHN MCENROE">JOHN MCENROE</label>
+					</div>
+					<div class="radiobtn">
+						<input type="radio" id="IVAN LENDL"
+									name="goat" value="IVAN LENDL" />
+						<label for="IVAN LENDL">IVAN LENDL</label>
+					</div>
+					<div class="radiobtn">
+						<input type="radio" id="JIMMY CONNORS"
+									name="goat" value="JIMMY CONNORS" />
+						<label for="JIMMY CONNORS">JIMMY CONNORS</label>
+					</div>
+					<div class="radiobtn">
+						<input type="radio" id="ROD LAVER"
+									name="goat" value="ROD LAVER" />
+						<label for="ROD LAVER">ROD LAVER</label><br>
+					</div>
+					<button class="button style3 fit" type="submit">Submit</button><br>
+				</form><br>
+				<div class="message">
+					{{text | safe}}
+				</div><br>
+
+
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<h2>Poll for the debate of the greatest tennis player of all time</h2>
+						<p>Please let us know who you think is the greatest tennis player of all time and we will mail you with the results among people who submit their vote.</p>
+						<p class="copyright">Made by : <a href="https://github.com/sabby993" target="_blank">Sabby Roy</a>. Images: <a href="https://www.google.com/imghp?hl=en" target="_blank">Google Images</a>.</p>
+					</div>
+				</footer>
+
+		<!-- Scripts -->
+			<script src="../static/js/jquery.min.js"></script>
+			<script src="../static/js/jquery.scrolly.min.js"></script>
+			<script src="../static/js/jquery.poptrox.min.js"></script>
+			<script src="../static/js/skel.min.js"></script>
+			<script src="../static/js/util.js"></script>
+			<script src="../static/js/main.js"></script>
+	</body>
+</html>
